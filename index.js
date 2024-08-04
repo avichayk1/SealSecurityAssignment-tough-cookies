@@ -51,12 +51,13 @@ async function main() {
         */
 
         var a = {};
-        if(a["/notauth"]["Slonser"] != null)
+        if(a["/notauth"]["Slonser"] != null)//if it not equal to null it mean that we added prototypes to idx and the object inhirit from it
             console.log("EXPLOITED SUCCESSFULLY");
         else
             console.log("EXPLOIT FAILED");
     } catch (error) {
         console.error("Error:", error);
+        console.log("EXPLOIT FAILED");
     }
 }
 
